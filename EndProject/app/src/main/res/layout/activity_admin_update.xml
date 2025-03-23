@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminUpdateActivity">
+
+    <!-- Fixed Logo Section -->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            app:srcCompat="@drawable/logo" />
+    </LinearLayout>
+
+    <!-- Scrollable Content Section -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/trailNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Trail Name" />
+
+            <CheckBox
+                android:id="@+id/waterBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Water" />
+
+            <CheckBox
+                android:id="@+id/campingBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Camping" />
+
+            <CheckBox
+                android:id="@+id/bikeBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bike" />
+
+            <CheckBox
+                android:id="@+id/petBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pet" />
+
+            <CheckBox
+                android:id="@+id/jeepBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jeep" />
+
+            <EditText
+                android:id="@+id/aboutTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="About Trail" />
+
+            <Button
+                android:id="@+id/updateBtn"
+                style="@style/Widget.Material3.Button.IconButton.Filled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#4CAF50"
+                android:text="Update" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

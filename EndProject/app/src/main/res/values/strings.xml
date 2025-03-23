@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">EndProject</string>
+    <string name="toLogin">login</string>
+    <string name="hello">hello</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="register">register</string>
+    <string name="north_trail">har meiron</string>
+    <string name="searchHint">Search for a trail</string>
+    <string name="North">North</string>
+    <string name="Center">Center</string>
+    <string name="South">South</string>
+    <string name="LogOut">LogOut</string>
+    <string name="Yourlocation">Your Location :</string>
+    <string name="Favorite">Favorite</string>
+    <string name="GPS">Open in GPS</string>
+
+
+</resources>

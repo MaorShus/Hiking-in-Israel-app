@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF"
+    android:orientation="vertical"
+    android:textAlignment="textEnd"
+    tools:context=".MainActivity">
+    <!--logo-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="178dp"
+            app:srcCompat="@drawable/logo" />
+    </LinearLayout>
+    <!--logo-->
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="435dp">
+
+        <ListView
+            android:id="@+id/favList"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!--Nav Bar-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!--home-->
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:contentDescription="Home"
+            app:srcCompat="@drawable/home"
+            tools:ignore="MissingConstraints" />
+
+        <!-- Add space between icons -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1" />
+
+        <!--search-->
+        <ImageButton
+            android:id="@+id/searchButton"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:contentDescription="Search"
+            app:srcCompat="@drawable/search"
+            tools:ignore="MissingConstraints" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1" />
+
+        <!--favorite-->
+        <ImageButton
+            android:id="@+id/favoriteButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:backgroundTint="#FFFFFF"
+            android:contentDescription="Favorite"
+            app:srcCompat="@drawable/favorite"
+            tools:ignore="MissingConstraints" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1" />
+
+        <!--profile-->
+        <ImageButton
+            android:id="@+id/profileButton"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:contentDescription="Profile"
+            app:srcCompat="@drawable/profile"
+            tools:ignore="MissingConstraints" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1" />
+
+        <!--admin-->
+        <ImageButton
+            android:id="@+id/adminButton"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:contentDescription="Admin"
+            android:visibility="gone"
+            app:srcCompat="@drawable/admin"
+            tools:ignore="MissingConstraints" />
+
+
+    </LinearLayout>
+    <!--Nav Bar-->
+
+
+</LinearLayout>

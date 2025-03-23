@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EndProject</string>
+    <string name="toLogin">התחברות</string>
+    <string name="hello">שלום</string>
+    <string name="username">שם משתמש</string>
+    <string name="password">סיסמא</string>
+    <string name="register">הרשמה</string>
+    <string name="north_trail">הר מירון</string>
+    <string name="searchHint">חיפוש מסלול</string>
+    <string name="North">צפון</string>
+    <string name="Center">מרכז</string>
+    <string name="South">דרום</string>
+    <string name="LogOut">התנתקות</string>
+    <string name="Yourlocation">המיקום שלך :</string>
+    <string name="Favorite">מועדף</string>
+    <string name="GPS">פתיחת מפה</string>
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BugsAdminActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="96dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/bugsListView"
+                android:layout_width="match_parent"
+                android:layout_height="531dp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!--Nav Bar-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="100dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!--home-->
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:contentDescription="Home"
+            app:srcCompat="@drawable/home"
+            tools:ignore="MissingConstraints" />
+
+        <!-- Add space between icons -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1" />
+
+        <!--search-->
+        <ImageButton
+            android:id="@+id/searchButton"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:contentDescription="Search"
+            app:srcCompat="@drawable/search"
+            tools:ignore="MissingConstraints" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1" />
+
+        <!--favorite-->
+        <ImageButton
+            android:id="@+id/favoriteButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:backgroundTint="#FFFFFF"
+            android:contentDescription="Favorite"
+            app:srcCompat="@drawable/favorite"
+            tools:ignore="MissingConstraints" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1" />
+
+        <!--profile-->
+        <ImageButton
+            android:id="@+id/profileButton"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:contentDescription="Profile"
+            app:srcCompat="@drawable/profile"
+            tools:ignore="MissingConstraints" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1" />
+
+        <!--admin-->
+        <ImageButton
+            android:id="@+id/adminButton"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:contentDescription="Admin"
+            android:visibility="gone"
+            app:srcCompat="@drawable/admin"
+            tools:ignore="MissingConstraints" />
+
+
+    </LinearLayout>
+    <!--Nav Bar-->
+
+
+
+</LinearLayout>
